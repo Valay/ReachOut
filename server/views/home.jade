@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 ReachOut
+  p.lead
+    | ReachOut is a service that helps people connect with NGOs
+    br
+    | Broadcast if you need help
+    br
+    | See their facebook profiles and chat with them.
+
+
+  if user
+    .alert.alert-success.animated.flipInX
+      i.fa.fa-check
+      strong Success!
+      |  You are logged in.
